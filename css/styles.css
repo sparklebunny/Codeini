@@ -1,0 +1,117 @@
+
+.wrapper {
+	
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* LOGO & Tag Line */
+
+.masthead {
+	height: 200px;
+	min-height: 50px;
+	width: 100%;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+/*	margin: 10px 0 10px 0;
+*/	/*background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right bottom,
+		color-stop(0.45, rgb(104, 227, 215)),
+		color-stop(1, rgb(185, 218, 95))
+	);
+	background-image: -o-linear-gradient(right bottom, rgb(104, 227, 215) 45%, rgb(185, 218, 95) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(104, 227, 215) 45%, rgb(185, 218, 95) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(104, 227, 215) 45%, rgb(185, 218, 95) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(104, 227, 215) 45%, rgb(185, 218, 95) 100%);
+	background-image: linear-gradient(to right bottom, rgb(104, 227, 215) 45%, rgb(185, 218, 95) 100%);*/
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right bottom,
+		color-stop(0.45, rgb(83, 207, 195)),
+		color-stop(1, rgb(185, 218, 95))
+	);
+	background-image: -o-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: linear-gradient(to right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+}
+
+.masthead h1 {
+	font-family: 'Gabriela', serif;
+	font-weight: bolder;
+	padding: 50px 0 10px 10px;
+	text-align: center;
+}
+
+.masthead h2 {
+	font-family: 'Cagliostro', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 0 0 10px;
+}
+
+.masthead h3 {
+	font-family: 'Gabriela', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.75em;
+	font-style: italic;
+	padding: 30px 0 0 10px;
+}
+
+/* NAVIGATION LINKS STYLIG */
+
+.navlink {
+	float: left;
+	padding: 0 10px 0 15px;
+}
+
+/* PORTFOLIO EXAMPLES */
+
+.examples {
+	margin: 150px 5px 20px 40px;
+}
+
+.description {
+	text-align: center;
+	margin-top: -30px;
+}
+.box {
+	min-height: 50px;
+	min-width: 50px;
+	max-height: 500px;
+	max-width: 500px;
+	height: 300px;
+	width: 300px;
+/*	outline: 2px solid #f4f4f2;
+*/	background-color: #bada5f;
+	float: left;
+	padding: 10px;
+	margin: 10px 10px 50px 5px;
+	border-radius: 180px;
+}
+
+
+.footer {
+	text-align: center;
+	clear: both;
+	
+}
