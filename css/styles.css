@@ -6,15 +6,28 @@
 h1 {
 	font-size: 2em;
 	font-weight: 800;
+	font-family: 'Gabriela', serif;
 }
 
 h2 {
 	font-size: 1.5em;
 	font-weight: 600;
+	font-family: 'Cagliostro', sans-serif;
+}
+
+p {
+	font-family: 'Gabriela', serif;
 }
 
 ul li {
 	list-style: none;
+	font-family: 'Cagliostro', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: green;
+	font-weight: bold;
 }
 
 /* LOGO & Tag Line */
@@ -78,10 +91,15 @@ ul li {
 }
 
 /* NAVIGATION LINKS STYLIG */
+.navbar {
+	padding-top: 8px;
+	width: 100%;
+	height: 50px;
+}
 
 .navlink {
 	float: left;
-	padding: 0 10px 0 15px;
+	padding: 10px 10px 0 15px;
 }
 
 /* PORTFOLIO EXAMPLES */
@@ -94,6 +112,25 @@ ul li {
 	text-align: center;
 	margin-top: -30px;
 }
+
+/*STYLING FOR PROJECT EXAMPLES WITHIN BOX DIV */
+
+.projects {
+	float: left;
+	margin-top: 15px;
+}
+
+
+.projects img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #f4f4f2;
+	border-radius: 180px;
+
+}
+
+/* BOX DESIGN FOR PROJECT CATEGORIES */
+
 .box {
 	min-height: 50px;
 	min-width: 50px;
@@ -106,12 +143,23 @@ ul li {
 	float: left;
 	padding: 10px;
 	margin: 10px 10px 50px 5px;
-	border-radius: 180px;
+	border-radius: 20px;
 }
 
+/*ABOUT PAGE STYLING */
+
+#about {
+	margin: 40px 10px 40px 15px;
+}
+
+.content {
+	margin: 15px 10px 30px 15px;
+	line-height: 1.5em;
+}
 
 .footer {
 	text-align: center;
 	clear: both;
+	margin-bottom: 12px;
 	
 }
