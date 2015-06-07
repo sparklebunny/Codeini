@@ -30,6 +30,20 @@ a {
 	font-weight: bold;
 }
 
+img.grayscale{
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%); /* For Webkit browsers */
+filter: gray; /* For IE 6 - 9 */
+-webkit-transition: all .1s ease; /* Fade to color for Chrome and Safari */
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.1111 0.1111 0.1111 0 0 0.1111 0.1111 0.1111 0 0 0.1111 0.1111 0.1111 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+
+img.grayscale:hover{
+filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
 /* LOGO & Tag Line */
 
 .masthead {
@@ -105,7 +119,7 @@ a {
 /* PORTFOLIO EXAMPLES */
 
 .examples {
-	margin: 150px 5px 20px 40px;
+	margin: 80px 5px 20px 40px;
 }
 
 .description {
@@ -113,38 +127,46 @@ a {
 	margin-top: -30px;
 }
 
+
 /*STYLING FOR PROJECT EXAMPLES WITHIN BOX DIV */
 
 .projects {
 	float: left;
-	margin-top: 15px;
+	background-color: #bada5f;
+	border-radius: 180px;
+	border: 2px solid black;
+	margin: 10px 8px 20px 8px;
+
 }
 
 
 .projects img {
-	width: 150px;
-	height: 150px;
-	border: 1px solid #f4f4f2;
+	width: 250px;
+	height: 250px;
+	/*border: 1px solid #f4f4f2;*/
 	border-radius: 180px;
+	margin: 10px;
+	padding: 15px;
+	text-align: center;
+	overflow: hidden;
+	}
 
-}
+/* BOX DESIGN FOR PROJECT CATEGORIES --- was in initial design. Removed for new design concept.*/
 
-/* BOX DESIGN FOR PROJECT CATEGORIES */
-
-.box {
+/*.box {
 	min-height: 50px;
 	min-width: 50px;
 	max-height: 500px;
 	max-width: 500px;
-	height: 300px;
-	width: 300px;
-/*	outline: 2px solid #f4f4f2;
-*/	background-color: #bada5f;
+	height: 350px;
+	width: 350px;
+	outline: 2px solid #f4f4f2;
+	background-color: #bada5f;
 	float: left;
 	padding: 10px;
 	margin: 10px 10px 50px 5px;
 	border-radius: 20px;
-}
+}*/
 
 /*ABOUT PAGE STYLING */
 
@@ -157,9 +179,9 @@ a {
 	line-height: 1.5em;
 }
 
-.footer {
+footer {
 	text-align: center;
 	clear: both;
-	margin-bottom: 12px;
+	padding: 75px 0 20px 0;
 	
 }
