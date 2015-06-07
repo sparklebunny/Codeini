@@ -182,6 +182,26 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 footer {
 	text-align: center;
 	clear: both;
-	padding: 75px 0 20px 0;
+/*	padding: 75px 0 20px 0;
+*/	height: 200px;
+	width: auto;
+
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right bottom,
+		color-stop(0.45, rgb(83, 207, 195)),
+		color-stop(1, rgb(185, 218, 95))
+	);
+	background-image: -o-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: linear-gradient(to right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
 	
+}
+
+#copyright {
+	text-align: center;
+	padding-top: 180px;
 }
