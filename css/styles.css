@@ -104,7 +104,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	padding: 30px 0 0 10px;
 }
 
-/* NAVIGATION LINKS STYLIG */
+/* NAVIGATION LINKS STYLING */
 .navbar {
 	padding-top: 8px;
 	width: 100%;
@@ -120,6 +120,18 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 
 .examples {
 	margin: 80px 5px 20px 40px;
+	position: relative;
+	text-align: center;
+
+}
+
+.examples ul {
+	display: inline-block;
+}
+
+.exmaples li {
+	display: block;
+
 }
 
 .description {
@@ -134,9 +146,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	float: left;
 	background-color: #bada5f;
 	border-radius: 180px;
-	border: 2px solid black;
+	border: 1px solid #11ABAB;
 	margin: 10px 8px 20px 8px;
-
+	box-shadow: 1px 1px 1px 1px #11ABAB;
+	-webkit-box-shadow: 1px 1px 1px 1px #11ABAB;
+	-moz-box-shadow: 1px 1px 1px 1px #11ABAB;
 }
 
 
@@ -179,12 +193,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	line-height: 1.5em;
 }
 
-footer {
-	text-align: center;
-	clear: both;
-/*	padding: 75px 0 20px 0;
-*/	height: 200px;
-	width: auto;
+.align {
+	display: inline-block;
+	height: 375px;
+	width: 100%;
 
 	background-image: -webkit-gradient(
 		linear,
@@ -201,7 +213,60 @@ footer {
 	
 }
 
-#copyright {
+.bottom {
+	display: block;
+	float: left;
+}
+
+#social {
+	padding: 20px 20px 20px 100px;
 	text-align: center;
-	padding-top: 180px;
+
+}
+
+.socialbtn {
+	height: 50px;
+	width: auto;
+	padding: 5px;
+}
+
+#houdini {
+	padding: 20px;
+	border-radius: 90px;
+
+}
+
+#hou-cu {
+	border-radius: 90px;
+	height: 300px;
+	width: auto;
+}
+
+#contact {
+	padding: 20px 50px 20px 20px;
+
+}
+
+#contact h2 {
+	text-align: center;
+}
+
+#contact p {
+	padding: 15px 0 5px 0;
+}
+
+#email  {
+	height: 20px;
+	width: 300px;
+}
+
+#comment  {
+	height: 100px;
+	width: 300px;
+}
+
+#copyright {
+	font-family: 'Gabriela', serif;
+	text-align: center;
+	clear: both;
 }
