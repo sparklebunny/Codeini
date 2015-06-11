@@ -301,6 +301,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 
 /* HIRE ME PAGE */
 
+
+
+
+/* HIRE ME FORM */
+
 #hireform {
 	margin: 10px 0 20px 20px;
 }
@@ -391,6 +396,8 @@ form#hireform fieldset.inquirysection input.hirebtn {
 	padding: 10px;
 	display: block;
 }
+
+/* BLOG PAGE STYLING AND INFO */
 
 
 
