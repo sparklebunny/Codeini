@@ -35,8 +35,26 @@
 		
 		</div>
 
-		<form>
-
+		<form id="hireform" action="MAILTO:jeribeth@gmail.com" method="post" enctype="text/plain">
+			<fieldset>
+				<legend>Need help with your next project?</legend>
+					<ol>
+						<li class="hirecontact"><label>First Name:</label><input type="text" name="fname" /></li>
+						<li class="hirecontact"><label>Last Name:</label><input type="text" name="lname" /></li>
+						<li class="hirecontact"><label>Company:</label><input type="text" name="company" /></li>
+						<li class="hirecontact"><label>Phone:</label><input type="tel" name="phone" /></li>
+						<li class="hirecontact"><label id="textmsg">Can you receive text messages?</label></li>
+						<input class="radio" type="radio" name="yes" value="Yes" checked="checked" /><label id="textmsg">Yes</label>
+							<input class="radio" type="radio" name="no" value="no" /><label id="textmsg">No</label>
+					</ol>
+			</fieldset>
+			<fieldset class="inquirysection">
+				<p><label id="inquiry">Inquiry:</label></p>
+				<p><textarea id="inquirybox" type="text" name="comment" rows="10" cols="80"></textarea></p>
+					
+				<input class="hirebtn" type="submit" value="Send">
+				<input class="hirebtn" type="reset" value="Reset">
+			</fieldset>
 		</form>
 
 		<footer class="align">
