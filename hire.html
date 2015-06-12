@@ -26,60 +26,89 @@
 		<nav class="navbar">
 			<ul>
 				<li class="navlink"><a href="index.html">Home</a></li>
-				<li class="navlink"><a href="about.html">About</a></li>
 				<li class="navlink"><a href="hire.html">Work with Me</a></li>
 				<li class="navlink"><a href="blog.html">Blog</a></li>
 			</ul>
 		</nav>
 
-		<div class="content">Need help completing your next project? Contact me for a quote! Whether it's coding an email, creating a landing page for your next promotion, updating web content, or developing a website, I can get the job done. In addition, I can assist you with your SEO, marketing and PR strategy, as well as copywriting and copy editing needs. 
+		<div id="hirepage">
+			<p class="content">Need help completing your next project? Contact me for a quote! Whether it's coding an email, creating a landing page for your next promotion, updating web content, or developing a website, I can get the job done. In addition, I can assist you with your SEO, marketing and PR strategy, as well as copywriting and copy editing needs. </p>
 		
+			<!-- <form id="hireform" action="MAILTO:jeribeth@gmail.com" method="post" enctype="text/plain">
+				<fieldset>
+					<legend>Contact me about your next project</legend>
+						<ol>
+							<li class="hirecontact"><label>First Name:</label><input type="text" name="fname" /></li>
+							<li class="hirecontact"><label>Last Name:</label><input type="text" name="lname" /></li>
+							<li class="hirecontact"><label>Company:</label><input type="text" name="company" /></li>
+							<li class="hirecontact"><label>Phone:</label><input type="tel" name="phone" /></li>
+							<li class="hirecontact"><label id="textmsg">Can you receive text messages?</label></li>
+							<input class="radio" type="checkbox" name="my-checkbox" value="Yes" checked /><label id="textmsg">Yes</label>
+						</ol>
+				</fieldset>
+				<fieldset class="inquirysection">
+					<p><label id="inquiry">Inquiry:</label></p>
+					<p><textarea id="inquirybox" type="text" name="comment" rows="10" cols="80"></textarea></p>
+						
+					<input class="hirebtn" type="submit" value="Send">
+					<input class="hirebtn" type="reset" value="Reset">
+				</fieldset>
+			</form> -->
+
+			<form action="MAILTO:jeribeth@gmail.com" method="post" name="HireMe">
+				<div class="row requiredRow">
+					<label for="txt_FirstName" id="FirstName-ariaLabel">First Name</label>
+					<input id="txt_FirstName" name="txt_FirstName" type="text" aria-labelledby="FirstName-ariaLabel" class="required" title="First Name. This is a required field">
+				</div>
+				<div class="row requiredRow">
+					<label for="txt_LastName" id="LastName-ariaLabel">Last Name</label>
+					<input id="txt_LastName" name="txt_LastName" type="text" aria-labelledby="LastName-ariaLabel" class="required" title="Last Name. This is a required field">
+				</div>
+				<div class="row requiredRow">
+					<label for="txt_Company" id="Company-ariaLabel">Company</label>
+					<input id="txt_Company" name="txt_Company" type="text" aria-labelledby="Company-ariaLabel" class="required" title="Company. This is a required field">
+				</div>
+				<div class="row requiredRow">
+					<label for="txt_Email" id="Email-ariaLabel">Email </label>
+					<input id="txt_Email" name="txt_Email" type="text" aria-labelledby="Email-ariaLabel" class="required" title="Email . This is a required field">
+				</div>
+				<div class="row requiredRow">
+					<label for="Phone" id="Phone-ariaLabel">Phone</label>
+					<input id="Phone" name="Phone" type="tel" aria-labelledby="Phone-ariaLabel" class="required" title="Email . This is a required field">
+				</div>
+				<div class="row">
+					<fieldset>
+						<legend>Can you receive text messages? </legend>
+						<span><input value="Yes" id="rad_Canyoureceivetextmessages?_1" name="rad_Canyoureceivetextmessages?" type="radio" aria-labelledby="Canyoureceivetextmessages?-ariaLabel" title="Email . This is a required field"> <label for="rad_Canyoureceivetextmessages?_1" id="Canyoureceivetextmessages?-ariaLabel">Yes</label></span>
+				 		<span><input value="No" id="rad_Canyoureceivetextmessages?_2" name="rad_Canyoureceivetextmessages?" type="radio" aria-labelledby="Canyoureceivetextmessages?-ariaLabel" title="Email . This is a required field"> <label for="rad_Canyoureceivetextmessages?_2" id="Canyoureceivetextmessages?-ariaLabel">No</label></span>
+				 	</fieldset>
+				</div>
+				<div class="row requiredRow">
+					<label for="txtarea_Inquiry" id="Inquiry-ariaLabel">Inquiry</label>
+					<textarea id="txtarea_Inquiry" name="txtarea_Inquiry" cols="80" rows="10" aria-labelledby="Inquiry-ariaLabel" class="required" title="Inquiry. This is a required field"></textarea>
+				</div>
+				<div class="row">
+				<input type="submit" value="Submit">
+				</div>
+			</form>
+
+
+
+
+
+
+
+
+
 		</div>
+		<footer class="nonhomepg">
 
-		<form id="hireform" action="MAILTO:jeribeth@gmail.com" method="post" enctype="text/plain">
-			<fieldset>
-				<legend>Contact me about your next project</legend>
-					<ol>
-						<li class="hirecontact"><label>First Name:</label><input type="text" name="fname" /></li>
-						<li class="hirecontact"><label>Last Name:</label><input type="text" name="lname" /></li>
-						<li class="hirecontact"><label>Company:</label><input type="text" name="company" /></li>
-						<li class="hirecontact"><label>Phone:</label><input type="tel" name="phone" /></li>
-						<li class="hirecontact"><label id="textmsg">Can you receive text messages?</label></li>
-						<input class="radio" type="checkbox" name="my-checkbox" value="Yes" checked /><label id="textmsg">Yes</label>
-					</ol>
-			</fieldset>
-			<fieldset class="inquirysection">
-				<p><label id="inquiry">Inquiry:</label></p>
-				<p><textarea id="inquirybox" type="text" name="comment" rows="10" cols="80"></textarea></p>
-					
-				<input class="hirebtn" type="submit" value="Send">
-				<input class="hirebtn" type="reset" value="Reset">
-			</fieldset>
-		</form>
-
-		<footer class="align">
-			
-			<div class="bottom" id="contact"><h2>Drop me a line!</h2>
-				<form action="MAILTO:jeribeth@gmail.com" method="post" enctype="text/plain">
-				<p>E-mail:</p>
-				<input id="email" type="text" name="mail" value=""><br>
-				<p>Message:</p>
-				<textarea id="comment" type="text" name="comment" rows="4" cols="50"></textarea><br><br>
-				<input type="submit" value="Send">
-				<input type="reset" value="Reset">
-				</form>
-			</div>
-
-			<div class="bottom" id="houdini"><img id="hou-cu" src="images/houdini-cu.jpg" alt="Houdini"></div>
-
-			<div class="bottom" id="social"><h2>Connect</h2>
-				<ul>
-					<li><a href="https://twitter.com/sparklebunny12" data-show-count="false" data-show-screen-name="false" data-dnt="true"><img class="socialbtn" src="images/Twitter-Icon.png" alt="Twitter"></a></li>
-					<li><a href="https://github.com/sparklebunny"><img class="socialbtn" src="images/Github-Icon.png" alt="Github"></a></li>
-					<li><a href="https://www.linkedin.com/in/jeribethstevens"><img class="socialbtn" src="images/Linkedin-Icon.png" alt="LinkedIn"></a></li>
-					<li><img class="socialbtn" src="images/Skype-Icon.png" alt="Skype"></li>
-					<li><a href="https://plus.google.com/+JeriBethS/about"><img class="socialbtn" src="images/Google-Plus-Icon.png" alt="Google Plus"></a></li>
-				</ul>
+			<div class="bottom" id="socialhire"><h2>Connect</h2>
+				<a href="https://twitter.com/sparklebunny12" data-show-count="false" data-show-screen-name="false" data-dnt="true"><img class="socialbtn" src="images/Twitter-Icon.png" alt="Twitter"></a>
+				<a href="https://github.com/sparklebunny"><img class="socialbtn" src="images/Github-Icon.png" alt="Github"></a>
+				<a href="https://www.linkedin.com/in/jeribethstevens"><img class="socialbtn" src="images/Linkedin-Icon.png" alt="LinkedIn"></a>
+				<img class="socialbtn" src="images/Skype-Icon.png" alt="Skype">
+				<a href="https://plus.google.com/+JeriBethS/about"><img class="socialbtn" src="images/Google-Plus-Icon.png" alt="Google Plus"></a>
 			</div>
 
 			<div id="copyright"><span>&#9400;</span> 2015 Jeri Beth Stevens, All Rights Reserved.</div>

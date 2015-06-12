@@ -212,6 +212,28 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	
 }
 
+.nonhomepg {
+	display: inline-block;
+	height: 200px;
+	width: 100%;
+	margin: 0;
+	position: relative;
+	bottom: 0;
+
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right bottom,
+		color-stop(0.45, rgb(83, 207, 195)),
+		color-stop(1, rgb(185, 218, 95))
+	);
+	background-image: -o-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -moz-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: -ms-linear-gradient(right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+	background-image: linear-gradient(to right bottom, rgb(83, 207, 195) 45%, rgb(185, 218, 95) 100%);
+}
+
 .bottom {
 	display: block;
 	float: left;
@@ -223,6 +245,17 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	padding: 20px 20px 20px 100px;
 	text-align: center;
 
+}
+
+/* SOCIAL BUTTONS ON HIRE, BLOG, AND ABOUT PAGES */
+
+#socialhire {
+	padding: 10px 20px 20px 10px;
+	text-align: left;
+}
+
+#socialhire h2 {
+	padding: 20px 0 15px 10px;
 }
 
 .socialbtn {
@@ -280,7 +313,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	text-align: center;
 	clear: both;
 	position: relative;
-	bottom: 10px;
+	bottom: 8px;
 }
 
 #copyright span {
@@ -288,7 +321,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 }
 
 
-/*ABOUT PAGE STYLING */
+/*ABOUT PAGE STYLING --- PAGE TEMPORARILY REMOVED FROM WEBSITE; CONTENT REDUNDANT */
 
 #about {
 	margin: 40px 10px 40px 15px;
@@ -301,6 +334,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 
 /* HIRE ME PAGE */
 
+#hirepage {
+}
 
 
 
@@ -397,7 +432,20 @@ form#hireform fieldset.inquirysection input.hirebtn {
 	display: block;
 }
 
+/* TRYING OUT FORM CREATION BY ACCESSIFY */
+
+div.row {background:#ffc;border:2px solid #ffc;margin:0 0 5px 0;float:left;width:50%;padding:6px 0;}
+div.row label {float:left;display:block;width:15em;font-weight:bold;padding:0 6px;}
+div.row label:hover {background:#FFFF66;cursor:pointer;}
+div.row fieldset {border:1px solid gray;margin:0 6px;}
+div.row fieldset span {display:block;}
+div.row fieldset span label {float:none;display:inline;}
+div.row fieldset legend {font-weight:bold;}
+div.requiredRow {border:2px solid #049;}
+
 /* BLOG PAGE STYLING AND INFO */
 
-
+#blogwhitespace {
+	padding: 100px;
+}
 
