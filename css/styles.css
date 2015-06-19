@@ -244,6 +244,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 #social {
 	padding: 20px 20px 20px 100px;
 	text-align: center;
+	float: right;
+
 
 }
 
@@ -277,9 +279,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	width: auto;
 }
 
-#hou-cu img {
-/*	border-radius: 180px;
-*/}
+/*#hou-cu img {
+	border-radius: 180px;
+}*/
 
 /* QUICK CONTACT FORM IN FOOTER */
 
@@ -321,7 +323,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 }
 
 
-/*ABOUT PAGE STYLING --- PAGE TEMPORARILY REMOVED FROM WEBSITE; CONTENT REDUNDANT */
+/*ABOUT PAGE STYLING */
 
 #about {
 	margin: 40px 10px 40px 15px;
@@ -339,9 +341,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 
 
 
-/* HIRE ME FORM */
+/* HIRE ME FORM; FIRST CODE WAS FOR MY OWN FORM CREATION. USED STYLING IS FOR ACCESSIBLE FORM -- TRYING SOMETHING NEW! */
 
-#hireform {
+/*#hireform {
 	margin: 10px 0 20px 20px;
 }
 
@@ -411,7 +413,7 @@ form#hireform fieldset.inquirysection p label#inquiry {
 	margin: 10px 0 10px 0;
 	padding: 0;
 /*	float: left;
-*/	text-align: left;
+*/	/*text-align: left;
 	clear: both;
 	display: block;
 }
@@ -419,7 +421,7 @@ form#hireform fieldset.inquirysection p label#inquiry {
 form#hireform fieldset.inquirysectionp textarea#inquirybox {
 	text-align: left;
 /*	float: left;
-*/	margin: 0;
+*//*	margin: 0;
 	padding-top: 10px;
 	clear: both;
 	display: block;
@@ -430,18 +432,41 @@ form#hireform fieldset.inquirysection input.hirebtn {
 	margin: 0;
 	padding: 10px;
 	display: block;
+}*/
+
+form {
+	margin: 10px 0 10px 20px;
 }
 
+form.row {
+	float: left;
+
+}
+
+div.row input#submitbtn {
+	height: 50px;
+	width: 80px;
+	border-radius: 5px;
+	background-color: #81b21c;
+	font-family: 'Cagliostro', sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+div.row label input.required {
+	width: 80em;
+}
 /* TRYING OUT FORM CREATION BY ACCESSIFY */
 
-div.row {background:#ffc;border:2px solid #ffc;margin:0 0 5px 0;float:left;width:50%;padding:6px 0;}
-div.row label {float:left;display:block;width:15em;font-weight:bold;padding:0 6px;}
+div.row {/*background:#ffc;border:2px solid #ffc;*/margin:0 0 5px 0;float:left;width:50%;padding:6px 0; font-family: 'Cagliostro', sans-serif;}
+div.row label {float:left;display:block;width:5em;font-weight:bold;padding:0 6px;}
 div.row label:hover {background:#FFFF66;cursor:pointer;}
-div.row fieldset {border:1px solid gray;margin:0 6px;}
+div.row fieldset {/*border:1px solid gray;*/margin:0 6px;}
 div.row fieldset span {display:block;}
-div.row fieldset span label {float:none;display:inline;}
-div.row fieldset legend {font-weight:bold;}
-div.requiredRow {border:2px solid #049;}
+div.row fieldset span label {float:none;display:inline; font-family: 'Cagliostro', sans-serif;}
+div.row fieldset legend {font-weight:bold; font-family: 'Cagliostro', sans-serif; padding-bottom: 8px;}
+div.row fieldset legend span input label {padding-bottom: 12px;}
+div.requiredRow {border:2px solid white;}
 
 /* BLOG PAGE STYLING AND INFO */
 
