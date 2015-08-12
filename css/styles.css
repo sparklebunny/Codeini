@@ -110,6 +110,36 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	padding: 30px 0 0 10px;
 }
 
+/*EVERYTHING'S BETTER WHEN IT SPARKLES*/
+
+$buttonBackground: #2c3e50;
+$buttonColor: rgba(255,255,255,1);
+
+.masthead .sparkley {
+
+  background: lighten( $buttonBackground , 10% );
+  color: $buttonColor;
+  border: none;
+
+  padding: 16px 36px;
+  font-weight: normal;
+  
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  
+  box-shadow: 0 38px 32px -23px black;
+  margin: 0 1em 1em;
+  
+  &:hover {
+   
+    background: $buttonBackground;
+    color: transparentize( $buttonColor,0.8 );
+    
+  }
+  
+}
+
+
 /* NAVIGATION LINKS STYLING */
 
 .navbar {
@@ -172,23 +202,6 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	text-align: center;
 	overflow: hidden;
 	}
-
-/* BOX DESIGN FOR PROJECT CATEGORIES --- was in initial design. Removed for new design concept.*/
-
-/*.box {
-	min-height: 50px;
-	min-width: 50px;
-	max-height: 500px;
-	max-width: 500px;
-	height: 350px;
-	width: 350px;
-	outline: 2px solid #f4f4f2;
-	background-color: #bada5f;
-	float: left;
-	padding: 10px;
-	margin: 10px 10px 50px 5px;
-	border-radius: 20px;
-}*/
 
 /* BOTTOM FOOTER PORTION WITH QUICK CONTACT FORM, HOUDINI LOGO PIC, SOCIAL CONNECTIONS, COPYRIGHT INFO */
 
@@ -329,9 +342,17 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	margin: 40px 10px 40px 15px;
 }
 
+#about-title {
+	margin-left: 10px;
+}
+
 .content {
 	margin: 15px 10px 30px 15px;
 	line-height: 1.5em;
+}
+
+#resume {
+	margin-left: 10px;
 }
 
 /* HIRE ME PAGE */
@@ -451,6 +472,8 @@ div.row input#submitbtn {
 	font-family: 'Cagliostro', sans-serif;
 	font-weight: bold;
 	font-size: 1.3em;
+	text-align: center;
+	padding: 1px;
 }
 
 div.row label input.required {
