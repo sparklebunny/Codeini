@@ -1,34 +1,14 @@
 $(document).ready(function() {
 
-// 	$("[name='my-checkbox']").bootstrapSwitch();
-
-
-// function elementSupportsAttribute(element,attribute) {
-//  var testEl = document.createElement(element);
-//  testEl.setAttribute('type',attribute);
-//  if (testEl.type=="text") {
-//   return false;
-//  } else {
-//   return true;
-//  }
-// }
-
-// if (!elementSupportsAttribute('input','tel')) {
-// // Write custom telephone number validation here.
-// }
-// if (!elementSupportsAttribute('input','range')) {
-// // JavaScript for custom slider/range control goes here.
-// }
-
 
 /*CREATING SPARKLES BECAUSE EVERYTHING IS BETTER WHEN IT SHINES! */
 
 $(".sparkley").sparkle({
   color: "#FFFFFF",
-  count: 50,
+  count: 20,
   overlap: 0,
   speed: 1,
-  minSize: 4,
+  minSize: 2,
   maxSize: 10,
   direction: "both"
 });
@@ -53,7 +33,7 @@ $(".sparkley")
         $(this).trigger("stop.sparkle");
     });
 
-// it's also possible to resize teh canvas and reposition 
+// it's also possible to resize the canvas and reposition 
 // the sparkles whenever the browser is resized...
 var timer;
 $(window).on("resize", function(){

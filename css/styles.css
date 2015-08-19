@@ -107,36 +107,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><
 	text-align: center;
 	font-size: 1.75em;
 	font-style: italic;
-	padding: 30px 0 0 10px;
-}
-
-/*EVERYTHING'S BETTER WHEN IT SPARKLES*/
-
-$buttonBackground: #2c3e50;
-$buttonColor: rgba(255,255,255,1);
-
-.masthead .sparkley {
-
-  background: lighten( $buttonBackground , 10% );
-  color: $buttonColor;
-  border: none;
-
-  padding: 16px 36px;
-  font-weight: normal;
-  
-  border-radius: 3px;
-  transition: all 0.25s ease;
-  
-  box-shadow: 0 38px 32px -23px black;
-  margin: 0 1em 1em;
-  
-  &:hover {
-   
-    background: $buttonBackground;
-    color: transparentize( $buttonColor,0.8 );
-    
-  }
-  
+	padding: 30px 0 0px 10px;
 }
 
 
@@ -362,98 +333,8 @@ $buttonColor: rgba(255,255,255,1);
 
 
 
-/* HIRE ME FORM; FIRST CODE WAS FOR MY OWN FORM CREATION. USED STYLING IS FOR ACCESSIBLE FORM -- TRYING SOMETHING NEW! */
+/* HIRE ME FORM; STYLING IS FOR ACCESSIBLE FORM -- TRYING SOMETHING NEW! */
 
-/*#hireform {
-	margin: 10px 0 20px 20px;
-}
-
-fieldset {
-	width: 650px;
-	clear: both;
-	padding: 5px;
-}
-
-legend {
-	font-size: 1.6em;
-	font-weight: bold;
-	font-family: 'Cagliostro', sans-serif;
-}
-
-label {
-	float: left;
-	text-align: right;
-	margin-right: 5px;
-	width: 50px;
-	display: block;
-	
-}
-
-form#hireform fieldset label {
-	font-family: 'Gabriela', serif;
-	font-weight: bold;
-	text-align: left;
-	width: 120px;
-	float: left;
-	display: block;
-	margin-bottom: 7px;
-}
-
-form#hireform fieldset li.hirecontact {
-	padding-bottom: 15px;
-}
-
-form#hireform fieldset li input {
-	width: 400px;
-	float: left;
-	font-family: 'Gabriela', serif;
-	display: block;
-	margin-bottom: 5px;
-}
-
-form#hireform fieldset li {
-	list-style: none;
-}
-
-form#hireform fieldset label#textmsg {
-	float: left;
-	margin: 0;
-	width: auto;
-}
-form#hireform fieldset input label.textmsg {
-	float: left;
-}
-
-form#hireform fieldset input.radio {
-	position: relative;
-	float: left;
-	bottom: 3px;
-	}
-
-form#hireform fieldset.inquirysection p label#inquiry {
-	margin: 10px 0 10px 0;
-	padding: 0;
-/*	float: left;
-*/	/*text-align: left;
-	clear: both;
-	display: block;
-}
-
-form#hireform fieldset.inquirysectionp textarea#inquirybox {
-	text-align: left;
-/*	float: left;
-*//*	margin: 0;
-	padding-top: 10px;
-	clear: both;
-	display: block;
-}
-
-form#hireform fieldset.inquirysection input.hirebtn {
-	text-align: left;
-	margin: 0;
-	padding: 10px;
-	display: block;
-}*/
 
 form {
 	margin: 10px 0 10px 20px;
@@ -474,11 +355,28 @@ div.row input#submitbtn {
 	font-size: 1.3em;
 	text-align: center;
 	padding: 1px;
+	margin: 10px 25px 0 0;
+	clear: both;
+}
+
+div.row input#resetbtn {
+	height: 50px;
+	width: 80px;
+	border-radius: 5px;
+	background-color: #81b21c;
+	font-family: 'Cagliostro', sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 1px;
+	margin: 10px 0 0 25px;
+	clear: both;
 }
 
 div.row label input.required {
 	width: 80em;
 }
+
 /* TRYING OUT FORM CREATION BY ACCESSIFY */
 
 div.row {/*background:#ffc;border:2px solid #ffc;*/margin:0 0 5px 0;float:left;width:50%;padding:6px 0; font-family: 'Cagliostro', sans-serif;}
